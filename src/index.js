@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const newSpanElementAfterEditSubmit = document.createElement("span");
+    newSpanElementAfterEditSubmit.addEventListener("click", editTodo);
 
     newInputButton.addEventListener("click", function (e) {
       const textPendingSubmission = e.target.parentNode.children[0].value;
